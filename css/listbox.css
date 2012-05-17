@@ -1,0 +1,38 @@
+.x-listbox {
+  border: 1px solid #99BCE8;
+  padding-top: 10px;
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.x-listbox li {
+  padding: 2px 10px;
+  position: relative;
+}
+.x-listbox li .x-listbox-item-del {
+  position: absolute;
+  text-indent: 1000px;
+  top: 2px;
+  right: 0px;
+  width: 16px;
+  height: 16px;
+  background: transparent url(../img/listbox-item-delete.png) center center no-repeat;
+  opacity: 0.2;
+  display: none;
+}
+.x-listbox li:hover .x-listbox-item-del {
+  display: block;
+}
+.x-listbox li .x-listbox-item-del:hover {
+  cursor: pointer;
+  opacity: 1;
+  background-color: #efefef;
+}
+.x-listbox li:hover {
+  background-color: #efefef;
+}
+.x-listbox .x-item-selected, .x-listbox .x-item-selected:hover {
+  background-color: #DFE8F6;
+}
