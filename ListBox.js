@@ -1,4 +1,4 @@
-Ext.define('BAS.ux.view.ListBox' ,{
+Ext.define('Ext.ux.listbox.ListBox' ,{
   extend          : 'Ext.view.View',
   requires        : [
       //'TT.view.content.constr.Selecter',
