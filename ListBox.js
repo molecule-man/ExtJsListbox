@@ -16,7 +16,8 @@ Ext.define('Ext.ux.listbox.ListBox' ,{
   prefix: '',
   postfix: '',
   displayField: 'title',
-  cntTag: 'ul',
+  cntTag: 'div',
+  listTag: 'ul',
   itemTag: 'li',
   deletable: false,
   
@@ -24,19 +25,22 @@ Ext.define('Ext.ux.listbox.ListBox' ,{
   delBtnCls: Ext.baseCSSPrefix+'listbox-item-del',
 
   initComponent: function() {
-    var me = this, style = '';
+    var me = this, tag = '<'+me.listTag;
     me.itemSelector = 'li.listbox-item';
     me.autoEl = { tag: me.cntTag, cls: Ext.baseCSSPrefix+'listbox' };
 
     if (me.columnWidth) {
-      me.autoEl.style = Ext.String.format(me.columningStyle, me.columnWidth);
+        tag += ' style="' + Ext.String.format(me.columningStyle, me.columnWidth) + '"';
     }
+
+    tag += '>';
 
     if (me.deletable) {
         me.postfix += '<div class="'+me.delBtnCls+'">x</div>';
     }
 
     me.tpl = [
+        tag,
         '<tpl for=".">',
           '<',me.itemTag,' class="listbox-item">',
             me.prefix,
@@ -44,6 +48,7 @@ Ext.define('Ext.ux.listbox.ListBox' ,{
             me.postfix,
           '</',me.itemTag,'>',
         '</tpl>',
+        '</',me.listTag,'>'
       ];
     me.callParent(arguments);
 
