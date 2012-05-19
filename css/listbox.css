@@ -1,6 +1,9 @@
 .x-listbox {
-  border: 1px solid #99BCE8;
   padding-top: 10px;
+}
+
+.x-listbox-bordered {
+  border: 1px solid #99BCE8;
   background-color: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -14,6 +17,7 @@
 .x-listbox li .x-listbox-item-del {
   position: absolute;
   text-indent: 1000px;
+  overflow: hidden;
   top: 2px;
   right: 0px;
   width: 16px;
