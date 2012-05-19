@@ -8,7 +8,7 @@ Ext.define('Ext.ux.listbox.ListBox' ,{
 
   selectCls       : Ext.baseCSSPrefix+'listbox-item-selected',
   alias           : 'widget.listbox',
-  cls             : Ext.baseCSSPrefix+'listbox-body',
+  cls             : Ext.baseCSSPrefix+'listbox',
   columningStyle: 'columns: {0}px; -moz-columns: {0}px; -webkit-columns: {0}px;',
   columnWidth: 0,
   multiSelect: true,
@@ -26,8 +26,12 @@ Ext.define('Ext.ux.listbox.ListBox' ,{
 
   initComponent: function() {
     var me = this, tag = '<'+me.listTag;
-    me.itemSelector = 'li.listbox-item';
-    me.autoEl = { tag: me.cntTag, cls: Ext.baseCSSPrefix+'listbox' };
+    me.itemSelector = me.itemTag+'.listbox-item';
+
+    if (!me.panel) {
+        me.cls += ' '+Ext.baseCSSPrefix+'listbox-bordered';
+    }
+    me.autoEl = { tag: me.cntTag, cls: me.cls };
 
     if (me.columnWidth) {
         tag += ' style="' + Ext.String.format(me.columningStyle, me.columnWidth) + '"';
