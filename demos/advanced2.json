@@ -1,0 +1,11 @@
+{ 'items': [
+    {'id': 1, 'name': 'Microsoft Corporation'},
+    {'id': 2, 'name': 'Pfizer Inc'},
+    {'id': 3, 'name': 'The Coca-Cola Company'},
+    {'id': 4, 'name': 'The Home Depot, Inc.'},
+    {'id': 5, 'name': 'The Procter & Gamble Company'},
+    {'id': 6, 'name': 'United Technologies Corporation'},
+    {'id': 7, 'name': 'Verizon Communications'},
+    {'id': 8, 'name': 'Wal-Mart Stores, Inc.'},
+    {'id': 9, 'name': 'Walt Disney Company (The) (Holding Company)'}
+]}  

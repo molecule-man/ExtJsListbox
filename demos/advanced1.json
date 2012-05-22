@@ -1,0 +1,23 @@
+{'items': [
+    {'id': 10, 'name': '3m Co'},
+    {'id': 11, 'name': 'Alcoa Inc'},
+    {'id': 12, 'name': 'Altria Group Inc'},
+    {'id': 13, 'name': 'American Express Company'},
+    {'id': 14, 'name': 'American International Group, Inc.'},
+    {'id': 15, 'name': 'AT&T Inc.'},
+    {'id': 16, 'name': 'Boeing Co.'},
+    {'id': 17, 'name': 'Caterpillar Inc.'},
+    {'id': 18, 'name': 'Citigroup, Inc.'},
+    {'id': 19, 'name': 'E.I. du Pont de Nemours and Company'},
+    {'id': 20, 'name': 'Exxon Mobil Corp'},
+    {'id': 21, 'name': 'General Electric Company'},
+    {'id': 22, 'name': 'General Motors Corporation'},
+    {'id': 23, 'name': 'Hewlett-Packard Co.'},
+    {'id': 24, 'name': 'Honeywell Intl Inc'},
+    {'id': 25, 'name': 'Intel Corporation'},
+    {'id': 26, 'name': 'International Business Machines'},
+    {'id': 27, 'name': 'Johnson & Johnson'},
+    {'id': 28, 'name': 'JP Morgan & Chase & Co'},
+    {'id': 29, 'name': 'McDonald\'s Corporation'},
+    {'id': 30, 'name': 'Merck & Co., Inc.'}
+]}
